@@ -25,7 +25,9 @@ fn main() {
 fn print_block(lines: &[String; 13], block_number: u8) {
     println!("{}", lines[0]);
 
-    for line_index in (1..block_number).rev() {
+    for line_index in (1..(block_number + 1)).rev() {
         println!("{}", lines[line_index as usize]);
     }
+
+    println!();
 }
